@@ -1,11 +1,11 @@
 # Criar um aplicativo de consulta a API do [GitHub](https://github.com)#
 
-Criar um aplicativo para consultar a [API do GitHub](https://developer.github.com/v3/) e trazer os repositórios mais populares de Java. Basear-se no mockup fornecido:
+Criar um aplicativo para consultar a [API do GitHub](https://developer.github.com/v3/) e trazer os repositórios mais populares de Swift. Basear-se no mockup fornecido:
 
 ![bitbucket.png](https://bitbucket.org/repo/bApLBb/images/1070562783-bitbucket.png)
 ### **Deve conter** ###
 
-- __Lista de repositórios__. Exemplo de chamada na API: `https://api.github.com/search/repositories?q=language:Java&sort=stars&page=1`
+- __Lista de repositórios__. Exemplo de chamada na API: `https://api.github.com/search/repositories?q=language:Swift&sort=stars&page=1`
   * Paginação na tela de lista, com endless scroll / scroll infinito (incrementando o parâmetro `page`).
   * Cada repositório deve exibir Nome do repositório, Descrição do Repositório, Nome / Foto do autor, Número de Stars, Número de Forks
   * Ao tocar em um item, deve levar a lista de Pull Requests do repositório
@@ -15,28 +15,24 @@ Criar um aplicativo para consultar a [API do GitHub](https://developer.github.co
 
 ### **A solução DEVE conter** ##
 
-* Versão mínima do iOS : 8.*
+* Versão mínima do iOS : 9.*
 * Arquivo .gitignore
 * Usar Storyboard e Autolayout
-* Gestão de dependências no projeto. Ex: Cocoapods
-* Framework para Comunicação com API. Ex:  AFNetwork
-* Mapeamento json -> Objeto . Ex: [Mantle](https://github.com/Mantle/Mantle#mtlmodel)
+* Gestão de dependências no projeto. Ex: Carthage ou Cocoapods
+* Framework para Comunicação com API. Ex:  Moya
+* Mapeamento json -> Objeto . Ex: [Argo](https://github.com/thoughtbot/Argo)
 
 ### **Ganha + pontos se conter** ###
 
-* Testes unitários no projeto. Ex: XCTests / Specta + Expecta
-* Testes funcionais. Ex: KIF
-* App Universal , Ipad | Iphone | Landscape | Portrait (Size Classes)
-* Cache de Imagens. Ex SDWebImage
+* Arquitetura MVVM, VIPER ou Clean Swift
+* Carthage
+* Testes unitários no projeto. Ex: Quick + Nimble
+* Testes funcionais
+* Cache de Imagens
 
 ### **Sugestões** ###
 
 As sugestões de bibliotecas fornecidas são só um guideline, sintam-se a vontade para usar diferentes e nos surpreenderem. O importante de fato é que os objetivos macros sejam atingidos. =)
-
-### **OBS** ###
-
-A foto do mockup é meramente ilustrativa.  
-
 
 ### **Processo de submissão** ###
 
