@@ -10,6 +10,7 @@
 		580599413591A40D9A3005E4 /* Pods_ios_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 102DEF7E1712CBDD4DC2C63B /* Pods_ios_challenge.framework */; };
 		D90C42D01E70F209000A6B74 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C42CF1E70F209000A6B74 /* CustomTableViewCell.swift */; };
 		D90C42D21E70F436000A6B74 /* RepositoriesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C42D11E70F436000A6B74 /* RepositoriesAPI.swift */; };
+		D90C42D41E721555000A6B74 /* PullRequestsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C42D31E721555000A6B74 /* PullRequestsAPI.swift */; };
 		D952C8FF1E6FA3E2003644F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D952C8FE1E6FA3E2003644F1 /* AppDelegate.swift */; };
 		D952C9011E6FA3E2003644F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D952C9001E6FA3E2003644F1 /* ViewController.swift */; };
 		D952C9041E6FA3E2003644F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D952C9021E6FA3E2003644F1 /* Main.storyboard */; };
@@ -24,9 +25,10 @@
 		D496DB9F89DCEFDDD7B52241 /* Pods-ios-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-challenge/Pods-ios-challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		D90C42CF1E70F209000A6B74 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		D90C42D11E70F436000A6B74 /* RepositoriesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesAPI.swift; sourceTree = "<group>"; };
+		D90C42D31E721555000A6B74 /* PullRequestsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRequestsAPI.swift; sourceTree = "<group>"; };
 		D952C8FB1E6FA3E2003644F1 /* ios-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D952C8FE1E6FA3E2003644F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D952C9001E6FA3E2003644F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D952C9001E6FA3E2003644F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		D952C9031E6FA3E2003644F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D952C9051E6FA3E2003644F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D952C9081E6FA3E2003644F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,7 +106,6 @@
 				D90C42CE1E70E82A000A6B74 /* UI */,
 				D952C90A1E6FA3E3003644F1 /* Info.plist */,
 				D952C8FE1E6FA3E2003644F1 /* AppDelegate.swift */,
-				D952C9001E6FA3E2003644F1 /* ViewController.swift */,
 				D952C9051E6FA3E2003644F1 /* Assets.xcassets */,
 			);
 			path = "ios-challenge";
@@ -122,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				D90C42D11E70F436000A6B74 /* RepositoriesAPI.swift */,
+				D90C42D31E721555000A6B74 /* PullRequestsAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -152,6 +154,7 @@
 		D952C9151E6FA8A4003644F1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D952C9001E6FA3E2003644F1 /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D90C42D21E70F436000A6B74 /* RepositoriesAPI.swift in Sources */,
+				D90C42D41E721555000A6B74 /* PullRequestsAPI.swift in Sources */,
 				D9779EF71E70D5A900316D8D /* Repositories.swift in Sources */,
 				D90C42D01E70F209000A6B74 /* CustomTableViewCell.swift in Sources */,
 				D952C9011E6FA3E2003644F1 /* ViewController.swift in Sources */,

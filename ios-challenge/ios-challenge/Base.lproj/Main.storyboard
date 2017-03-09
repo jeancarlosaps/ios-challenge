@@ -117,6 +117,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rZK-jw-sO2"/>
+                    <connections>
+                        <outlet property="tableViewRepositories" destination="Q5R-3n-CPp" id="AKR-6Z-QdM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
