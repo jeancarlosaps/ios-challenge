@@ -7,21 +7,30 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class PullRequests{
-    let title:String //Título do PR;
-    let login:String //Nome do autor do PR;
-    let avatar_URL_PR:String //Avatar do usuário/autor do PR (se tiver);
-    let body:String //Body do PR;
-    let createdAt:String //Data do PR;
-    let numberPR:Int //Número do PR;
+class PullRequests: Mappable{
+    var title:String? //Título do PR;
+    var body:String? //Body do PR;
+    var user:PullRequestsUser?
     
-    init(login:String, title:String, avatar_URL_PR:String, body:String, createdAt:String, numberPR:Int) {
-        self.title = title
-        self.login = login
-        self.avatar_URL_PR = avatar_URL_PR
-        self.body = body
-        self.createdAt = createdAt
-        self.numberPR = numberPR
+    required init?(map: Map) {
+        
     }
+    
+    func mapping(map: Map) {
+        title <- map["title"]
+        body <- map["body"]
+        user <- map["user"]
+        
+    }
+    
+//    init(login:String, title:String, avatar_URL_PR:String, body:String, createdAt:String, numberPR:Int) {
+//        self.title = title
+//        self.login = login
+//        self.avatar_URL_PR = avatar_URL_PR
+//        self.body = body
+//        self.createdAt = createdAt
+//        self.numberPR = numberPR
+//    }
 }

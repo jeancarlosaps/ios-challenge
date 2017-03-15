@@ -8,4 +8,7 @@ target 'ios-challenge' do
   # Pods for ios-challenge
   pod 'Alamofire', '~> 4.4'
   pod 'SDWebImage', '~>3.8'
+  pod 'ICSPullToRefresh'
+  pod 'PKHUD', '~> 4.0'
+  pod 'AlamofireObjectMapper', '~> 4.0'
 end

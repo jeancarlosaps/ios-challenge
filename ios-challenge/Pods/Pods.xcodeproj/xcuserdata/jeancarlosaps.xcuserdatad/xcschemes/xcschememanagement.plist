@@ -9,6 +9,26 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AlamofireObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ICSPullToRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PKHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ios-challenge.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +42,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>42CBC2547F6121CB8E46167D5891D3A0</key>
+		<key>2F5622F3B18DF497981AB58C6D1FC72F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79079E33D0DFAED9CE5367FE325291D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88BC1A73F0CA1E9AD85C7646752A7A82</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9E61EB943EB2B0958C071C1C6EEE123F</key>
+		<key>9502FB01641FBABB78522037E882757B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C04D20C149DC87D4B56EB934084B22BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D7A75F149082140741FC1E0B5B2863C8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

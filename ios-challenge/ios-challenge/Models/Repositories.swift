@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import ObjectMapper
 
 extension String{
     var userName:String{
@@ -14,21 +15,30 @@ extension String{
     }
 }
 
-class Repositories {
-    let id:Int
-    let nameRepositories:String //Nome do repositório;
-    let full_name:String //UserName + Nome do repositório;
-    let login:String
-    let description:String //Descrição do respositório;
-    let avatar_url:String //Avatar do usuário/autor do PR (se tiver);
+class Repositories: Mappable {
+    var id:Int?
+    var nameRepositories:String? //Nome do repositório;
+    var full_name:String? //UserName + Nome do repositório;
+    var description:String? //Descrição do respositório;
+    var owner:RepositorieOwner?
     
-    init(id:Int, nameRepositories:String, full_name:String, login:String, description:String, avatar_url:String) {
-        self.id = id
-        self.nameRepositories = nameRepositories
-        self.full_name = full_name
-        self.login = login
-        self.description = description
-        self.avatar_url = avatar_url
+    required init(map: Map) {
+        
     }
+    
+    func mapping(map: Map){
+        id <- map["id"]
+        nameRepositories <- map["name"]
+        full_name <- map["full_name"]
+        description <- map["description"]
+        owner <- map["owner"]
+    }
+    
+//    init(id:Int, nameRepositories:String, full_name:String, description:String, owner : RepositorieOwner) {
+//        self.id = id
+//        self.nameRepositories = nameRepositories
+//        self.full_name = full_name
+//        self.description = description
+//        self.owner = owner
+//    }
 }
-

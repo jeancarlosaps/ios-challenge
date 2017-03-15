@@ -7,34 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0853153E1E73987B009B909F /* RepositorieOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0853153D1E73987B009B909F /* RepositorieOwner.swift */; };
+		089CE1B71E72387400F8A33D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089CE1B31E72387400F8A33D /* LaunchScreen.storyboard */; };
+		089CE1B81E72387400F8A33D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089CE1B51E72387400F8A33D /* Main.storyboard */; };
+		089CE1BC1E7238C100F8A33D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089CE1BB1E7238C100F8A33D /* ViewController.swift */; };
+		089CE1C11E723B5A00F8A33D /* RepositoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089CE1C01E723B5A00F8A33D /* RepositoriesTableViewCell.swift */; };
 		580599413591A40D9A3005E4 /* Pods_ios_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 102DEF7E1712CBDD4DC2C63B /* Pods_ios_challenge.framework */; };
-		D90C42D01E70F209000A6B74 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C42CF1E70F209000A6B74 /* CustomTableViewCell.swift */; };
+		D902A3621E788882009F0422 /* PullRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D902A3601E788882009F0422 /* PullRequestsViewController.swift */; };
+		D902A3631E788882009F0422 /* PullRequestsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D902A3611E788882009F0422 /* PullRequestsViewController.xib */; };
 		D90C42D21E70F436000A6B74 /* RepositoriesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C42D11E70F436000A6B74 /* RepositoriesAPI.swift */; };
-		D90C42D41E721555000A6B74 /* PullRequestsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C42D31E721555000A6B74 /* PullRequestsAPI.swift */; };
 		D952C8FF1E6FA3E2003644F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D952C8FE1E6FA3E2003644F1 /* AppDelegate.swift */; };
-		D952C9011E6FA3E2003644F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D952C9001E6FA3E2003644F1 /* ViewController.swift */; };
-		D952C9041E6FA3E2003644F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D952C9021E6FA3E2003644F1 /* Main.storyboard */; };
 		D952C9061E6FA3E2003644F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D952C9051E6FA3E2003644F1 /* Assets.xcassets */; };
-		D952C9091E6FA3E2003644F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D952C9071E6FA3E2003644F1 /* LaunchScreen.storyboard */; };
 		D9779EF71E70D5A900316D8D /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9779EF61E70D5A900316D8D /* Repositories.swift */; };
 		D9779EF91E70D5BB00316D8D /* PullRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9779EF81E70D5BB00316D8D /* PullRequests.swift */; };
+		D9EE41E51E79C42A001D8B3E /* PullRequestsUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EE41E41E79C42A001D8B3E /* PullRequestsUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0853153D1E73987B009B909F /* RepositorieOwner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositorieOwner.swift; sourceTree = "<group>"; };
+		089CE1B41E72387400F8A33D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		089CE1B61E72387400F8A33D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		089CE1BB1E7238C100F8A33D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		089CE1C01E723B5A00F8A33D /* RepositoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesTableViewCell.swift; sourceTree = "<group>"; };
 		102DEF7E1712CBDD4DC2C63B /* Pods_ios_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D496DB9F89DCEFDDD7B52241 /* Pods-ios-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-challenge/Pods-ios-challenge.debug.xcconfig"; sourceTree = "<group>"; };
-		D90C42CF1E70F209000A6B74 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		D902A3601E788882009F0422 /* PullRequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PullRequestsViewController.swift; path = PullRequests/PullRequestsViewController.swift; sourceTree = "<group>"; };
+		D902A3611E788882009F0422 /* PullRequestsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PullRequestsViewController.xib; path = PullRequests/PullRequestsViewController.xib; sourceTree = "<group>"; };
 		D90C42D11E70F436000A6B74 /* RepositoriesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesAPI.swift; sourceTree = "<group>"; };
-		D90C42D31E721555000A6B74 /* PullRequestsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRequestsAPI.swift; sourceTree = "<group>"; };
 		D952C8FB1E6FA3E2003644F1 /* ios-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D952C8FE1E6FA3E2003644F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D952C9001E6FA3E2003644F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
-		D952C9031E6FA3E2003644F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D952C9051E6FA3E2003644F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D952C9081E6FA3E2003644F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D952C90A1E6FA3E3003644F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9779EF61E70D5A900316D8D /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
 		D9779EF81E70D5BB00316D8D /* PullRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRequests.swift; sourceTree = "<group>"; };
+		D9EE41E41E79C42A001D8B3E /* PullRequestsUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRequestsUser.swift; sourceTree = "<group>"; };
 		DD78AF2B18FA15B14A853518 /* Pods-ios-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-challenge/Pods-ios-challenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,21 +65,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		089CE1B91E72387B00F8A33D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				089CE1B31E72387400F8A33D /* LaunchScreen.storyboard */,
+				089CE1B51E72387400F8A33D /* Main.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		089CE1BA1E7238C100F8A33D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				089CE1BB1E7238C100F8A33D /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		3E620F4F4E29A145EA7CC8D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				102DEF7E1712CBDD4DC2C63B /* Pods_ios_challenge.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D90C42CE1E70E82A000A6B74 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				D952C9071E6FA3E2003644F1 /* LaunchScreen.storyboard */,
-				D952C9021E6FA3E2003644F1 /* Main.storyboard */,
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 		D952C8F21E6FA3E2003644F1 = {
@@ -97,15 +111,16 @@
 		D952C8FD1E6FA3E2003644F1 /* ios-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				D902A3601E788882009F0422 /* PullRequestsViewController.swift */,
+				D902A3611E788882009F0422 /* PullRequestsViewController.xib */,
+				D96436921E78771400EAF558 /* PullRequests */,
 				D952C9111E6FA8A4003644F1 /* API */,
 				D952C9101E6FA8A4003644F1 /* Cell */,
-				D952C9141E6FA8A4003644F1 /* Class */,
-				D952C9151E6FA8A4003644F1 /* Controllers */,
-				D952C9131E6FA8A4003644F1 /* Images */,
+				089CE1BA1E7238C100F8A33D /* Controllers */,
 				D952C9121E6FA8A4003644F1 /* Models */,
-				D90C42CE1E70E82A000A6B74 /* UI */,
-				D952C90A1E6FA3E3003644F1 /* Info.plist */,
+				089CE1B91E72387B00F8A33D /* UI */,
 				D952C8FE1E6FA3E2003644F1 /* AppDelegate.swift */,
+				D952C90A1E6FA3E3003644F1 /* Info.plist */,
 				D952C9051E6FA3E2003644F1 /* Assets.xcassets */,
 			);
 			path = "ios-challenge";
@@ -114,7 +129,7 @@
 		D952C9101E6FA8A4003644F1 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				D90C42CF1E70F209000A6B74 /* CustomTableViewCell.swift */,
+				089CE1C01E723B5A00F8A33D /* RepositoriesTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -123,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				D90C42D11E70F436000A6B74 /* RepositoriesAPI.swift */,
-				D90C42D31E721555000A6B74 /* PullRequestsAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -133,30 +147,17 @@
 			children = (
 				D9779EF61E70D5A900316D8D /* Repositories.swift */,
 				D9779EF81E70D5BB00316D8D /* PullRequests.swift */,
+				0853153D1E73987B009B909F /* RepositorieOwner.swift */,
+				D9EE41E41E79C42A001D8B3E /* PullRequestsUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		D952C9131E6FA8A4003644F1 /* Images */ = {
+		D96436921E78771400EAF558 /* PullRequests */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		D952C9141E6FA8A4003644F1 /* Class */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Class;
-			sourceTree = "<group>";
-		};
-		D952C9151E6FA8A4003644F1 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				D952C9001E6FA3E2003644F1 /* ViewController.swift */,
-			);
-			path = Controllers;
+			path = PullRequests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,12 +167,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D952C90D1E6FA3E3003644F1 /* Build configuration list for PBXNativeTarget "ios-challenge" */;
 			buildPhases = (
+				BA3F035DE1750667E7896893 /* [CP] Check Pods Manifest.lock */,
 				A91975B97052D44E6E8547F1 /* [CP] Check Pods Manifest.lock */,
 				D952C8F71E6FA3E2003644F1 /* Sources */,
 				D952C8F81E6FA3E2003644F1 /* Frameworks */,
 				D952C8F91E6FA3E2003644F1 /* Resources */,
 				4EB1F23C2E47E6050CE4228C /* [CP] Embed Pods Frameworks */,
 				3036144787A5FE7B7CAF7591 /* [CP] Copy Pods Resources */,
+				150753C7054AB1A6C7798BA5 /* 📦 Embed Pods Frameworks */,
+				A7367E11346E84EBFBC51427 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,15 +226,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D952C9091E6FA3E2003644F1 /* LaunchScreen.storyboard in Resources */,
+				089CE1B81E72387400F8A33D /* Main.storyboard in Resources */,
 				D952C9061E6FA3E2003644F1 /* Assets.xcassets in Resources */,
-				D952C9041E6FA3E2003644F1 /* Main.storyboard in Resources */,
+				089CE1B71E72387400F8A33D /* LaunchScreen.storyboard in Resources */,
+				D902A3631E788882009F0422 /* PullRequestsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		150753C7054AB1A6C7798BA5 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-challenge/Pods-ios-challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3036144787A5FE7B7CAF7591 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,7 +281,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-challenge/Pods-ios-challenge-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A7367E11346E84EBFBC51427 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-challenge/Pods-ios-challenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A91975B97052D44E6E8547F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA3F035DE1750667E7896893 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,11 +334,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D90C42D21E70F436000A6B74 /* RepositoriesAPI.swift in Sources */,
-				D90C42D41E721555000A6B74 /* PullRequestsAPI.swift in Sources */,
+				D9EE41E51E79C42A001D8B3E /* PullRequestsUser.swift in Sources */,
+				0853153E1E73987B009B909F /* RepositorieOwner.swift in Sources */,
 				D9779EF71E70D5A900316D8D /* Repositories.swift in Sources */,
-				D90C42D01E70F209000A6B74 /* CustomTableViewCell.swift in Sources */,
-				D952C9011E6FA3E2003644F1 /* ViewController.swift in Sources */,
+				089CE1BC1E7238C100F8A33D /* ViewController.swift in Sources */,
+				089CE1C11E723B5A00F8A33D /* RepositoriesTableViewCell.swift in Sources */,
 				D9779EF91E70D5BB00316D8D /* PullRequests.swift in Sources */,
+				D902A3621E788882009F0422 /* PullRequestsViewController.swift in Sources */,
 				D952C8FF1E6FA3E2003644F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,22 +348,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D952C9021E6FA3E2003644F1 /* Main.storyboard */ = {
+		089CE1B31E72387400F8A33D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D952C9031E6FA3E2003644F1 /* Base */,
-			);
-			name = Main.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		D952C9071E6FA3E2003644F1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D952C9081E6FA3E2003644F1 /* Base */,
+				089CE1B41E72387400F8A33D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = ..;
+			sourceTree = "<group>";
+		};
+		089CE1B51E72387400F8A33D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089CE1B61E72387400F8A33D /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

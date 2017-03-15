@@ -11,23 +11,24 @@ import Alamofire
 
 class RepositoriesAPI {
     
-    var arrayRepositoriesList = [Repositories]()
-    
-    func getRepositoriesAPI(page:Int, completation: ([Repositories])) -> Void {
-        let formatString = String(format: "%i", page)
-        let url:String = "https://api.github.com/search/repositories?q=language:Swift&sort=stars&page=\(formatString)"
+    func getRepositoriesAPI(_ page:Int, completion: @escaping ([Repositories]) -> Void) {
+        let url : String = String(format: "https://api.github.com/search/repositories?q=language:Swift&sort=stars&page=%i", page)
         
         Alamofire.request(url).validate().responseJSON { response in
             switch response.result{
             case .success:
                 
-                if let json = response.result.value as? [String: Any]{
-                    print("JSON \(json)")
+                if let json = response.result.value as? [String: Any] {
+                    let items = json["items"] as? [[String : Any]]
+                    var repositories = [Repositories]()
                     
-                    let repositories = Repositories(id:json["id"] as! Int, nameRepositories:json["name"] as! String, full_name:json["full_name"] as! String, login:json["login"] as! String, description:json["description"] as! String, avatar_url:json["avatar_url"] as! String)
-                    
-                    self.arrayRepositoriesList.append(repositories)
-                    
+                    for repositorieJSON in items! {
+                        let repositorie : Repositories = Repositories(id:repositorieJSON["id"] as! Int, nameRepositories:repositorieJSON["name"] as! String, full_name:repositorieJSON["full_name"] as! String, description:repositorieJSON["description"] as! String, owner : repositorieJSON["owner"] as! RepositorieOwner)
+                        
+                        repositories.append(repositorie)
+                    }
+                    // devolve para a classe que chamo o resultado
+                    completion(repositories)
                 } else {
                     
                 }
@@ -36,4 +37,10 @@ class RepositoriesAPI {
             }
         }
     }
+    
+//    func getPullRequests(_ pullRequestCreator:String, pullRequestRepository:String) -> Void{
+//
+//        //"https://api.github.com/repos/\(prCreator = userName)/\(prRepository = repositorieName)/pulls" name & login
+//    }
+
 }
