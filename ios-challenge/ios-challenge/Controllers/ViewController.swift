@@ -16,8 +16,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let api = API()
     var repositories = [Repositorie]()
     var page:Int = 1
-//    let pullRequestCreator:String?
-//    let pullRequestRepository:String?
     
     //MARK: Outlets
     @IBOutlet weak var tableViewRepositories: UITableView!
@@ -32,7 +30,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Registrar celula custom na tableview (usar somente quando usar XIB)
 //        tableViewRepositories.register(RepositoiresTableViewCell.classForCoder(), forCellReuseIdentifier: "RepositoriesCell")
         
-        loadRepositoires(true)
+        loadRepositories(true)
     }
     
     func addPullToRefresh() {
@@ -43,18 +41,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.tableViewRepositories.delegate = nil
             
             self.repositories.removeAll()
-            self.loadRepositoires(false)
+            self.loadRepositories(false)
         }
     }
     
     func addInfiniteScrolling() {
         tableViewRepositories.addInfiniteScrollingWithHandler {
             self.page += 1
-            self.loadRepositoires(false)
+            self.loadRepositories(false)
         }
     }
     
-    func loadRepositoires(_ showProgress : Bool) {
+    func loadRepositories(_ showProgress : Bool) {
         // Mostrar PKHUD
         if showProgress == true {
             HUD.show(.progress)

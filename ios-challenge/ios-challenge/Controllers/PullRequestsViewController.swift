@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PKHUD
 
 class PullRequestsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -21,20 +22,55 @@ class PullRequestsViewController: UIViewController, UITableViewDelegate, UITable
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Configurar Pull To Refresh
+        addPullToRefresh()
+        
         configureTableView()
-        loadData()
+        loadData(true)
+    }
+    
+    func addPullToRefresh() {
+        tableViewPullRequests.addPullToRefreshHandler {
+            //self.page = 1
+            
+            self.tableViewPullRequests.dataSource = nil
+            self.tableViewPullRequests.delegate = nil
+            
+            self.pullRequests.removeAll()
+            self.loadData(false)
+        }
     }
     
     func configureTableView() {
         tableViewPullRequests.register(UINib(nibName: "PullRequestsTableViewCell", bundle: nil), forCellReuseIdentifier: "PullRequestCell")
     }
     
-    func loadData() {
+    func loadData(_ showProgress: Bool) {
         // Chamar a API e popular os dados que vao alimentar a tableView
-        tableViewPullRequests.delegate = self
-        tableViewPullRequests.dataSource = self
+        if showProgress == true{
+            HUD.show(.progress)
+        }
         
-        tableViewPullRequests.reloadData()
+        api.getPullRequests(login!, pullRequestRepository: repositorieName!) { response in
+            if showProgress == true {
+                HUD.flash(.success, delay: 1.0)
+            }
+            
+            self.tableViewPullRequests.pullToRefreshView?.stopAnimating()
+            self.tableViewPullRequests.infiniteScrollingView?.stopAnimating()
+            
+            self.pullRequests.append(contentsOf: response)
+            
+            if self.pullRequests.count > 0{
+                self.tableViewPullRequests.delegate = self
+                self.tableViewPullRequests.dataSource = self
+                
+                self.tableViewPullRequests.reloadData()
+            }else{
+                //Array vazio
+            }
+        }
     }
     
     //MARK: UITableViewDelegate
