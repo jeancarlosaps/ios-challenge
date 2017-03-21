@@ -1,0 +1,37 @@
+//
+//  PullRequestsTableViewCell.swift
+//  ios-challenge
+//
+//  Created by Marcos Lacerda on 16/03/17.
+//  Copyright © 2017 Jean Carlos. All rights reserved.
+//
+
+import UIKit
+import SDWebImage
+
+class PullRequestsTableViewCell: UITableViewCell {
+    
+    //MARK: IBOutlets
+    @IBOutlet weak var lblPullRequestTitle: UILabel!
+    @IBOutlet weak var lblPullRequestBody: UILabel!
+    @IBOutlet weak var lblPullRequestCreator: UILabel!
+    @IBOutlet weak var imgAvatarPullRequestCreator: UIImageView!
+    @IBOutlet weak var imgAvatarPullRequestCreatorHeightConstraint: NSLayoutConstraint!
+    
+    //MARK: Método para customização de elementos da célula chamada no lifecycle da tableview
+    override func awakeFromNib() {
+        // customizaçoes
+        imgAvatarPullRequestCreator.layer.cornerRadius = imgAvatarPullRequestCreatorHeightConstraint.constant / 2
+        imgAvatarPullRequestCreator.layer.masksToBounds = true
+    }
+    
+    func initWithPullRequest(_ pullRequest : PullRequests) {
+        lblPullRequestTitle.text = pullRequest.title
+        lblPullRequestBody.text = pullRequest.body
+        
+        lblPullRequestCreator.text = pullRequest.user?.login
+        
+        let imgAvatarPullRequestCreatorURL = URL(string: (pullRequest.user?.avatarURL)!)
+        imgAvatarPullRequestCreator.sd_setImage(with: imgAvatarPullRequestCreatorURL)
+    }
+}

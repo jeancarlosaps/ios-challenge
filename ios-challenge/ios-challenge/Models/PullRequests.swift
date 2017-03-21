@@ -12,7 +12,7 @@ import ObjectMapper
 class PullRequests: Mappable{
     var title:String? //Título do PR;
     var body:String? //Body do PR;
-    var user:PullRequestsUser?
+    var user:RepositorieOwner?
     
     required init?(map: Map) {
         
@@ -24,13 +24,4 @@ class PullRequests: Mappable{
         user <- map["user"]
         
     }
-    
-//    init(login:String, title:String, avatar_URL_PR:String, body:String, createdAt:String, numberPR:Int) {
-//        self.title = title
-//        self.login = login
-//        self.avatar_URL_PR = avatar_URL_PR
-//        self.body = body
-//        self.createdAt = createdAt
-//        self.numberPR = numberPR
-//    }
 }

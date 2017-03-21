@@ -13,9 +13,11 @@ import PKHUD
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     //MARK: Variáveis de controle
-    let api = RepositoriesAPI()
-    var repositories = [Repositories]()
-    var page : Int = 1
+    let api = API()
+    var repositories = [Repositorie]()
+    var page:Int = 1
+//    let pullRequestCreator:String?
+//    let pullRequestRepository:String?
     
     //MARK: Outlets
     @IBOutlet weak var tableViewRepositories: UITableView!
@@ -82,12 +84,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     //MARK: Métodos de UITableViewDataSource e UITableViewDelegate
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : RepositoiresTableViewCell = tableView.dequeueReusableCell(withIdentifier: "RepositoriesCell", for: indexPath) as! RepositoiresTableViewCell
-        let repositorie = repositories[indexPath.row] as Repositories
-        
-        print("Desenhando celula : \(indexPath.row)")
+        let repositorie = repositories[indexPath.row] as Repositorie
         
         cell.initWithRepositorie(repositorie)
         
@@ -99,17 +98,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let repositorie = repositories[indexPath.row] as Repositories
+        let repositorie = repositories[indexPath.row] as Repositorie
         let owner = repositorie.owner
         let login = owner?.login
         let repositorieName = repositorie.nameRepositories
         
-        let pullRequestController = UIViewController()
+        let pullRequestController = PullRequestsViewController()
         
-//        pullRequestController.login = login
-//        pullRequestController.repositorieName = repositorieName
+        pullRequestController.login = login
+        pullRequestController.repositorieName = repositorieName
         
         self.navigationController?.pushViewController(pullRequestController, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
     }
 
 }

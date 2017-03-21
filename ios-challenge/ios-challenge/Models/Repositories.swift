@@ -9,29 +9,19 @@
 import Foundation
 import ObjectMapper
 
-extension String{
-    var userName:String{
-        return components(separatedBy: "/").first ?? ""
-    }
-}
-
 class Repositories: Mappable {
-    var id:Int?
-    var nameRepositories:String? //Nome do repositório;
-    var full_name:String? //UserName + Nome do repositório;
-    var description:String? //Descrição do respositório;
-    var owner:RepositorieOwner?
+    var total_count:Int? = 0
+    var incomplete_results:Bool? = false
+    var items:[Repositorie]?
     
     required init(map: Map) {
         
     }
     
     func mapping(map: Map){
-        id <- map["id"]
-        nameRepositories <- map["name"]
-        full_name <- map["full_name"]
-        description <- map["description"]
-        owner <- map["owner"]
+        total_count <- map["total_count"]
+        incomplete_results <- map["incomplete_results"]
+        items <- map["items"]
     }
     
 //    init(id:Int, nameRepositories:String, full_name:String, description:String, owner : RepositorieOwner) {

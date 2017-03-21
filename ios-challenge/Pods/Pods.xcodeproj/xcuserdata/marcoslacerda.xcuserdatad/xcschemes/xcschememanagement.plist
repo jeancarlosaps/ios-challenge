@@ -9,7 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AlamofireObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ICSPullToRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ObjectMapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,6 +42,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>071F413FB962B5B2AC6E0E09F2A95758</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1EA96A62D83CCA8663EC9351F2E80520</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>62C2246B5E77548783B78455B7BD9C9B</key>
 		<dict>
 			<key>primary</key>
@@ -42,17 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>92DD88200A526318B92694B5AEB23D6C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EDA687953FAC4C69BE78DE7AAEDC780D</key>
+		<key>C5CBCAA97E951CC882334464FBDF983D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>F6F0516F82D07656D12F1C0716898F73</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBD082A0D35F7917EAB9DD9D3CCA9976</key>
 		<dict>
 			<key>primary</key>
 			<true/>

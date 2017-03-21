@@ -11,28 +11,29 @@ import SDWebImage
 
 class RepositoiresTableViewCell: UITableViewCell {
 
+    //MARK: IBOutlets
     @IBOutlet weak var lblRepositorieName: UILabel!
     @IBOutlet weak var lblDescription: UILabel!
     @IBOutlet weak var imgAvatar: UIImageView!
     @IBOutlet weak var lblUserName: UILabel!
     @IBOutlet weak var lblNameSurname: UILabel!
+    @IBOutlet weak var imgAvatarHeightConstraint : NSLayoutConstraint!
     
-    // Metodo para customização de elementos da celular chamada no lifecycle da tableview
+    //MARK: Método para customização de elementos da celula chamada no lifecycle da tableview
     override func awakeFromNib() {
-        imgAvatar.layer.borderWidth = 1
+        imgAvatar.layer.cornerRadius = imgAvatarHeightConstraint.constant / 2
         imgAvatar.layer.masksToBounds = true
-        imgAvatar.layer.borderColor = UIColor.clear.cgColor
-        imgAvatar.layer.cornerRadius = imgAvatar.frame.height / 2
     }
    
-    func initWithRepositorie(_ repositorie : Repositories) {
+    func initWithRepositorie(_ repositorie : Repositorie) {
         lblRepositorieName.text = repositorie.nameRepositories
-        lblDescription.text = repositorie.description
         
         let imgAvatarURL = URL(string: (repositorie.owner?.avatarURL)!)
         imgAvatar.sd_setImage(with: imgAvatarURL)
         
         lblUserName.text = repositorie.owner?.login
         lblNameSurname.text = repositorie.full_name
+        
+        lblDescription.text = repositorie.description
     }
 }
