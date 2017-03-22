@@ -23,12 +23,4 @@ class Repositories: Mappable {
         incomplete_results <- map["incomplete_results"]
         items <- map["items"]
     }
-    
-//    init(id:Int, nameRepositories:String, full_name:String, description:String, owner : RepositorieOwner) {
-//        self.id = id
-//        self.nameRepositories = nameRepositories
-//        self.full_name = full_name
-//        self.description = description
-//        self.owner = owner
-//    }
 }

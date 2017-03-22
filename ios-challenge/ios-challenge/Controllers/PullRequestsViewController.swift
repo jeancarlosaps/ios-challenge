@@ -8,6 +8,7 @@
 
 import UIKit
 import PKHUD
+import SafariServices
 
 class PullRequestsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -28,11 +29,11 @@ class PullRequestsViewController: UIViewController, UITableViewDelegate, UITable
         
         configureTableView()
         loadData(true)
+        navigationItem.title = repositorieName
     }
     
     func addPullToRefresh() {
         tableViewPullRequests.addPullToRefreshHandler {
-            //self.page = 1
             
             self.tableViewPullRequests.dataSource = nil
             self.tableViewPullRequests.delegate = nil
@@ -73,11 +74,14 @@ class PullRequestsViewController: UIViewController, UITableViewDelegate, UITable
         }
     }
     
-    //MARK: UITableViewDelegate
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pullRequests.count
+    func openPullRequest(_ urlPullRequest:String){
+        if let url = URL(string: urlPullRequest) {
+            let vc = SFSafariViewController(url: url, entersReaderIfAvailable: true)
+            present(vc, animated: true)
+        }
     }
+
+    //MARK: UITableViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : PullRequestsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "PullRequestCell", for: indexPath) as! PullRequestsTableViewCell
@@ -86,6 +90,17 @@ class PullRequestsViewController: UIViewController, UITableViewDelegate, UITable
         cell.initWithPullRequest(pullRequest)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return pullRequests.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let pullRequest = pullRequests[indexPath.row] as PullRequests
+        let url = pullRequest.url
+        
+        openPullRequest(url!)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

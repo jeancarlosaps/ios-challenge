@@ -23,12 +23,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "Github Swift"
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
         // Configurar Pull To Refresh e o Infinite Scrolling
         addPullToRefresh()
         addInfiniteScrolling()
-        
-        // Registrar celula custom na tableview (usar somente quando usar XIB)
-//        tableViewRepositories.register(RepositoiresTableViewCell.classForCoder(), forCellReuseIdentifier: "RepositoriesCell")
         
         loadRepositories(true)
     }

@@ -21,8 +21,4 @@ class RepositorieOwner: Mappable {
         login <- map["login"]
         avatarURL <- map["avatar_url"]
     }
-//    init(_ login : String, avatarURL : String) {
-//        self.login = login
-//        self.avatarURL = avatarURL
-//    }
 }

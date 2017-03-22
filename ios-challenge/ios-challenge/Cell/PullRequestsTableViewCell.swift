@@ -23,6 +23,8 @@ class PullRequestsTableViewCell: UITableViewCell {
         // customizaçoes
         imgAvatarPullRequestCreator.layer.cornerRadius = imgAvatarPullRequestCreatorHeightConstraint.constant / 2
         imgAvatarPullRequestCreator.layer.masksToBounds = true
+        imgAvatarPullRequestCreator.layer.borderColor = UIColor.gray.cgColor
+        imgAvatarPullRequestCreator.layer.borderWidth = 1.0
     }
     
     func initWithPullRequest(_ pullRequest : PullRequests) {
